@@ -1,0 +1,142 @@
+nav {
+    background-color: orange;
+    padding: 10px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration:aliceblue;
+    padding: 10px 18px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: rgb(250, 173, 173);
+}    
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0; 
+    width: 100%; 
+}
+body {
+    font-family: Arial,sans-serif;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    background-color: antiquewhite;
+}
+.image-container {
+    flex: 1;
+    background-image: url('../src/imagenes/fondoZZZ.png');
+    background-size: cover;
+    background-position: center;
+    background-color: azure;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    padding: 20px;
+}
+ /* Estilo para todos los enlaces */
+    a {
+      color: #3498db; /* Color del texto del enlace */
+      text-decoration: none; /* Elimina el subrayado predeterminado */
+      font-weight: bold; /* Hace el texto en negrita */
+      font-family: Arial, sans-serif; /* Establece la fuente */
+      transition: color 0.3s ease, transform 0.2s ease; /* Animación suave para cambios de color y transformación */
+    }
+
+    /* Estilo para los enlaces al pasar el mouse (hover) */
+    a:hover {
+      color: #e74c3c; /* Cambia el color a rojo cuando el ratón pasa por encima */
+      transform: scale(1.1); /* Aumenta ligeramente el tamaño del enlace */
+    }
+
+    /* Estilo para los enlaces visitados */
+    a:visited {
+      color: #9b59b6; /* Color morado para enlaces visitados */
+    }
+
+    /* Estilo para el enlace cuando se está presionando (active) */
+    a:active {
+      color: #f39c12; /* Color amarillo al presionar */
+    }
+
+    /* Estilo para enlaces desactivados (si no se debe hacer clic en ellos) */
+    a[disabled] {
+      color: #bdc3c7; /* Color gris para desactivados */
+      pointer-events: none; /* Desactiva la acción de clic */
+      text-decoration: none; /* Elimina el subrayado también cuando está desactivado */
+    }
+    button {
+        padding: 10px 20px; /* Espaciado interno: 10px arriba/abajo y 20px izquierda/derecha */
+        background-color: #3498db; /* Color de fondo (azul) */
+        color: white; /* Color del texto */
+        font-size: 16px; /* Tamaño de la fuente */
+        font-family: Arial, sans-serif; /* Tipo de fuente */
+        border: none; /* Eliminar borde predeterminado */
+        border-radius: 5px; /* Bordes redondeados */
+        cursor: pointer; /* Cambiar el cursor a mano al pasar por encima */
+        transition: background-color 0.3s ease, transform 0.2s ease; /* Transición suave para efectos */
+      }
+  
+      /* Estilo del botón cuando el ratón pasa por encima (hover) */
+      button:hover {
+        background-color: #2980b9; /* Color de fondo más oscuro */
+        transform: scale(1.05); /* Aumenta ligeramente el tamaño del botón */
+      }
+  
+      /* Estilo del botón cuando está siendo presionado (active) */
+      button:active {
+        background-color: #1c5982; /* Color de fondo aún más oscuro */
+        transform: scale(1); /* Vuelve al tamaño normal */
+      }
+  
+      /* Estilo del botón cuando está deshabilitado (disabled) */
+      button:disabled {
+        background-color: #bdc3c7; /* Color gris para el fondo */
+        color: #7f8c8d; /* Color gris para el texto */
+        cursor: not-allowed; /* Cambia el cursor a un símbolo de "no permitido" */
+        pointer-events: none; /* Evita que se haga clic en el botón */
+      }
+  
+      /* Estilo para el botón con un borde */
+      .boton-borde {
+        border: 2px solid #3498db; /* Agrega un borde azul */
+        background-color: transparent; /* Fondo transparente */
+        color: #3498db; /* Color del texto igual al borde */
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+  
+      .boton-borde:hover {
+        background-color: #3498db; /* Fondo azul al hacer hover */
+        color: white; /* Cambia el color del texto a blanco */
+      }
+      #mensaje {
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #27ae60;
+      }
+      .error {
+        color: red;
+        font-size: 14px;
+        display: none;
+      }

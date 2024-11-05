@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sebastian Marin Henriquez</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Sebastian Marin Henriquez</h1>
+        </header>
+        <img src="/imagenes/346471370_808493433585951_3506733894674711845_n.jpg" width="50%">
+        <p>
+            Soy estudiante de Ingeniería de Sistemas en la Universidad Libre, sede Centro de Barranquilla, con una
+            sólida formación técnica en áreas de programación y desarrollo de software. Actualmente me encuentro
+            cursando el cuarto semestre de la carrera, lo que me permite aplicar conocimientos de sistemas informáticos
+            mientras continúo ampliando mis competencias en nuevas tecnologías.
+
+            Además, tengo un nivel intermedio-avanzado de francés, ya que estoy cursando el nivel STEP 6 en la Alianza
+            Canadiense, lo que me permite comunicarme con fluidez en un entorno profesional bilingüe.
+
+            A lo largo de mi experiencia laboral, he desempeñado diversos roles en el sector de la hostelería y ventas
+            (cocinero, mesero y vendedor), lo que me ha permitido desarrollar habilidades en atención al cliente,
+            trabajo en equipo y resolución de problemas en entornos dinámicos. Mi capacidad para adaptarme rápidamente a
+            diferentes contextos y aprender nuevas habilidades me ha permitido crecer tanto en el ámbito profesional
+            como personal.
+
+            Estoy buscando oportunidades donde pueda combinar mis estudios en ingeniería con mi experiencia práctica,
+            para seguir desarrollando mis habilidades y contribuir al éxito de proyectos innovadores.
+        </p>
+        <ul>
+            <li>Programacion basica de paginas web</li>
+            <li>Programacion en JavaAplication</li>
+            <li>Manejo de base de datos basico</li>
+            <li>Frances basico</li>
+        </ul>
+
+    </div>
+    <div class="container">
+        <footer>
+            <p>Sebastian Marin Henriquez</p>
+            <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+            <p><a href="https://www.facebook.com/kenny.marinhenriquez.1/?locale=es_LA">Contacto</a> | <a
+                    href="https://chatgpt.com/">Colaborador principal</a></p>
+        </footer>
+        <div>
+            <form id="contactForm">
+                <!-- Nombre -->
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                    <div class="error" id="nameError">Por favor, ingresa tu nombre.</div>
+                </div>
+
+                <!-- Correo electrónico -->
+                <div class="form-group">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                    <div class="error" id="emailError">Por favor, ingresa un correo válido.</div>
+                </div>
+
+                <!-- Mensaje -->
+                <div class="form-group">
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <div class="error" id="messageError">Por favor, ingresa un mensaje.</div>
+                </div>
+
+                <!-- Enviar -->
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        <button onclick="mostrarMensaje()">Presiona aquí</button>
+        <div id="mensaje"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
